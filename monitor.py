@@ -28,10 +28,6 @@ def check_qld_price():
                     trigger_notification(current_price)
                 break
 
-                if current_price >= UPPER_THRESHOLD_PRICE:
-                    trigger_notification2(current_price)
-                break
-
 
     except Exception as e:
         print(f"Error checking market: {e}")
